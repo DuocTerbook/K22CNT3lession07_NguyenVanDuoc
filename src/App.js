@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import NvdUseState from './components/NvdUseState'
+import NvdUseEffect from './components/NvdUseEffect'
+import NvdUseContext from './components/NvdUseContext'
+import './App.css'
+export default class App extends Component {
+  render() {
+    return (
+      <div className='constrainer border mt-3'>
+        <h1 className='text-center'>Nguyễn Văn Được-Hook</h1>
+        <hr/>
+        <NvdUseState/>
+        <hr/>
+        <NvdUseEffect/>
+        <hr/>
+        <NvdUseContext/>
+      </div>
+    )
+  }
 }
-
-export default App;
